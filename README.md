@@ -132,7 +132,7 @@ Please use the following citation:
 @article{huang2024modularsentenceencodersseparating,
       title={Modular Sentence Encoders: Separating Language Specialization from Cross-Lingual Alignment}, 
       author={Yongxin Huang and Kexin Wang and Goran Glavaš and Iryna Gurevych},
-      year={2024},
+      year={2025},
       url={https://arxiv.org/abs/2407.14878},
       journal={ArXiv preprint},
       volume={abs/2407.14878},
