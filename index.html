@@ -74,7 +74,7 @@
                     <div class="publication-links">
                          <!-- Arxiv PDF link -->
                       <span class="link-block">
-                        <a href="https://arxiv.org/pdf/2407.14878" target="_blank"
+                        <a href="https://aclanthology.org/2025.acl-long.108/" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
                         <span class="icon" style="color:white;">
                           <i class="fas fa-file-pdf"></i>
@@ -143,24 +143,6 @@ Different cross-lingual tasks place <b>conflicting demands</b> on the representa
   </div>
 </section>
 
-<!-- <section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <h2 class="title is-3 has-text-centered">Current multilingual sentence encoders face three key challenges.</h2>
-      <h2>
-<b>Curse of multilinguality</b>: Loss of Representation precision for individual languages due to parameter sharing <br><br> 
-<b>Trade-off between monolingual and cross-lingual performance</b>: Forcing cross-lingual alignment between non-isomorphic monolingual spaces can distort monolingual semantic structures. <br><br>  
-<b>Different cross-lingual tasks place conflicting demands on the representation space</b>: 
-<b>Cross-lingual transfer</b> (on a multilingual collection of monolingual tasks) benefits from high isomorphism between monolingual spaces (!= language-agnostic space).
-<b>Cross-lingual semantic textual similarity (STS)</b> requires modelling fine-grained semantic similarity, from exact equivalence to complete mismatch.
-<b>Bitext mining</b> requires low similarity between embeddings of non-translation pairs (even if they are similar). <br><br>  
-      </h2>
-<img src="static/images/sts_bitext_mining.png" width="80%"/>
-    </div>
-  </div>
-</section> -->
-<!-- End teaser image -->
-
 
 <!-- Paper abstract -->
 <section class="section hero is-light">
@@ -203,60 +185,43 @@ The CLA adapter is trained on the mixture of cross-lingual data paraphrase pairs
 </section>
 
 
-<!-- Result1 -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-five-sixths">
-        <h2 class="title is-3">Monolingual specialization lifts the curse of multilinguality in both monolingual and cross-lingual tasks.</h2>
-        <img src="static/images/results1.png" width="80%"/>
-        <h2 class="content has-text-justified">
-Monolingual specialization brings particularly large gains for low-resource languages — especially on tasks like our extended STS-B and STR-24, which focus on under-represented Turkic, African, and Indic languages. 
-Even without any explicit cross-lingual training, our specialized encoders already outperform the full-training baselines on <b>cross-lingual</b> tasks with large margins. It indicates that the improved monolingual representation quality has a positive effect on cross-lingual performance.
-        </h2>    
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Result2 -->
-<section class="section hero">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-five-sixths">
-        <h2 class="title is-3">Balanced performance in all cross-lingual metrics without compromising monolingual performance.</h2>
-        <img src="static/images/results2.png" width="80%"/>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Paper poster -->
-<!-- <section class="hero is-small is-light">
+<!-- Paper poster --> 
+<section class="hero is-small is-light">
   <div class="hero-body">
     <div class="container">
       <h2 class="title">Poster</h2>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+      <iframe  src="static/pdfs/poster.pdf" width="100%" height="550">
           </iframe>
         
       </div>
     </div>
-  </section> -->
-<!--End paper poster -->
+  </section>
+<!--End paper poster
 
 
 <!--BibTex citation -->
   <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
-      <pre><code>@article{huang2024modularsentenceencodersseparating,
-      title={Modular Sentence Encoders: Separating Language Specialization from Cross-Lingual Alignment}, 
-      author={Yongxin Huang and Kexin Wang and Goran Glavaš and Iryna Gurevych},
-      year={2025},
-      url={https://arxiv.org/abs/2407.14878},
-      journal={ArXiv preprint},
-      volume={abs/2407.14878},
+      <pre><code>@inproceedings{huang-etal-2025-modular,
+    title = "Modular Sentence Encoders: Separating Language Specialization from Cross-Lingual Alignment",
+    author = "Huang, Yongxin  and
+      Wang, Kexin  and
+      Glava{\v{s}}, Goran  and
+      Gurevych, Iryna",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.108/",
+    pages = "2167--2187",
+    ISBN = "979-8-89176-251-0",
 }</code></pre>
     </div>
 </section>

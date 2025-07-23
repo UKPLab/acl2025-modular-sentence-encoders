@@ -4,7 +4,7 @@
 [![Python Versions](https://img.shields.io/badge/Python-3.10-blue.svg?style=flat&logo=python&logoColor=white)](https://www.python.org/)
 
 
-This repository implements the method for training multilingual sentence embeddings in the paper *Modular Sentence Encoders: Separating Language Specialization from Cross-Lingual Alignment*.
+This repository implements the method for training multilingual sentence embeddings in the paper [*Modular Sentence Encoders: Separating Language Specialization from Cross-Lingual Alignment*](https://aclanthology.org/2025.acl-long.108/).
 
 > **Abstract:** Multilingual sentence encoders (MSEs) are commonly obtained by training multilingual language models to map sentences from different languages into a shared semantic space. As such, they are subject to curse of multilinguality, a loss of monolingual representational accuracy due to parameter sharing. Another limitation of MSEs is the trade-off between different task performance: cross-lingual alignment training distorts the optimal monolingual structure of semantic spaces of individual languages, harming the utility of sentence embeddings in monolingual tasks; cross-lingual tasks, such as cross-lingual semantic similarity and zero-shot transfer for sentence classification, may also require conflicting cross-lingual alignment strategies. In this work, we address both issues by means of modular training of sentence encoders. We first train language-specific monolingual modules to mitigate negative interference between languages (i.e., the curse). We then align all non-English sentence embeddings to the English by training cross-lingual alignment adapters, preventing interference with monolingual specialization from the first step. We train the cross-lingual adapters with two different types of data to resolve the conflicting requirements of different cross-lingual tasks. Monolingual and cross-lingual results on semantic text similarity and relatedness, bitext mining and sentence classification show that our modular solution achieves better and more balanced performance across all the tasks compared to full-parameter training of monolithic multilingual sentence encoders, especially benefiting low-resource languages.
 >
@@ -129,13 +129,24 @@ The script [eval_belebele.py](eval.belebele.py) is for the evaluation on Belebel
 Please use the following citation:
 
 ```
-@article{huang2024modularsentenceencodersseparating,
-      title={Modular Sentence Encoders: Separating Language Specialization from Cross-Lingual Alignment}, 
-      author={Yongxin Huang and Kexin Wang and Goran Glavaš and Iryna Gurevych},
-      year={2025},
-      url={https://arxiv.org/abs/2407.14878},
-      journal={ArXiv preprint},
-      volume={abs/2407.14878},
+@inproceedings{huang-etal-2025-modular,
+    title = "Modular Sentence Encoders: Separating Language Specialization from Cross-Lingual Alignment",
+    author = "Huang, Yongxin  and
+      Wang, Kexin  and
+      Glava{\v{s}}, Goran  and
+      Gurevych, Iryna",
+    editor = "Che, Wanxiang  and
+      Nabende, Joyce  and
+      Shutova, Ekaterina  and
+      Pilehvar, Mohammad Taher",
+    booktitle = "Proceedings of the 63rd Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    month = jul,
+    year = "2025",
+    address = "Vienna, Austria",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2025.acl-long.108/",
+    pages = "2167--2187",
+    ISBN = "979-8-89176-251-0",
 }
 ```
 
